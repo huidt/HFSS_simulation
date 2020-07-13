@@ -4,7 +4,7 @@
 **[The Author's E-mail](http://www.thdong.top/index.php/start-page.html)**
 
 * ANSYS Electromagnetics Suite 19（HFSS）安装：https://www.mr-wu.cn/ansys-electromagnetics-suite-19-free-download/
-* 参考教程：https://www.bilibili.com/video/BV1kK411W7Fm
+* HFSS仿真设计参考教程：https://www.bilibili.com/video/BV1kK411W7Fm
 
 ## 1.1. 微带天线仿真设计(exp1.aedt)
 
