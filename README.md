@@ -21,33 +21,33 @@
 微带线馈电方式又称为侧馈，它用与微带辐射贴片集成在一起的微带传输线进行馈电。它可以中心馈电，也可以偏心馈电，但馈电点的位置取决于激励哪种模式。对于微带传输线的馈电方式，当微带天线的尺寸确定以后，可以先将中心馈电天线辐射贴片同50Ω的馈线一起光刻，测量输入阻抗并设计出阻抗匹配变换器，然后在天线辐射贴片与馈线之间接入该阻抗匹配变换器，从而重新做成天线。
 设辐射元的长为L，宽为W，介质基片的厚度为H。将辐射元、介质基片和接地板视为一段长为L的微带传输线，在传输线的两端断开形成开路，根据微带传输线的理论，由于基片厚度	h<<λ，场沿h方向均匀分布。在最简单的情况下，场沿宽度W方向也没有变化，而仅在长度方向（L≈λ/2)有变化。在开路两端的电场均可以分解为相对于接地板的垂直分量和水平分量，两垂直分量方向相反，水平分量方向相同，因而在垂直于接地板的方向，两水平分量电场所产生的远区场同向叠加，而两垂直分量所产生的场反相相消。因此，两开路端的水平分量可以等效为无限大平面上同相激励的两个缝隙，缝的电场方向与长边垂直，并沿长边W均匀分布。缝的宽度△L ≈H，长度为W，两缝间距为L≈ λ/2。这就是说，微带天线的辐射可以等效为有两个缝隙所组成的二元阵列。
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo1.png)
+![](img/weibo1.png)
 
 ### 1.1.3. 模型示意图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo3.png)
+![](img/weibo3.png)
 
 ### 1.1.4. 实验结果
 
 1. 天线仿真
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo4.png)
+![](img/weibo4.png)
 
 2. S11史密斯圆
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo5.png)
+![](img/weibo5.png)
 
 3. 辐射方向增益图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo6.png)
+![](img/weibo6.png)
 
 4. 天线三维增益
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo7.png)
+![](img/weibo7.png)
 
 ### 1.1.5. 数据分析
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo9.png)
+![](img/weibo9.png)
 
 天线仿真，刚开始仿真出来的曲线图最低点频率2.43GHZ，与设定的2.45GHZ相比有偏移，从分析结果中可以看出，天线的谐振频率落在2.45GHz上，而设计要求的中心频率为2.45GHz，S11值约为-23.5bB。此时我们需要更改设计，方法是使用优化选项新增参数，仿真曲线如下图，从图中可看出离2.45GHZ最近的是褐色曲线，尺寸大概26mm。从参数扫描结果看，谐振频率随着L0的增加而降低，当L0=28mm时，谐振频率约为2.45GHz。从参数扫描分析结果看出，改变1/4波长阻抗转换器的宽度W1，不会改变天线的谐振频率。当W1=1.1mm时，2.45GHz频点的S11值最小，约为-23.5dB。由于工作频率与天线长度L有关，可通过更改之前设置的参数数值更改L数值，使仿真结果接近理想值，不断修改贴片形状与馈电位置以使工作频率接近2.45GHZ。通过所作出的实验结果可以看出来，辐射边界表面和辐射体的距离大于1/4个波长，天线的中心频率约等于2.45GHz，扫频范围设置在1.5GHz-3.5GHz，使用快速扫频，在设计中，我调整了微带贴片的长度和阻抗转换器的宽度，以便得到良好的天线性能，并在最后使用了HFSS分析，给出微带天线各项性能参数的分析结果。
 
@@ -63,27 +63,27 @@
 
 ### 1.2.3. 天线结构示意图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo11.png)
+![](img/weibo11.png)
 
 ### 1.2.4. 仿真结果
 
 1. S参数仿真曲线图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo12.png)
+![](img/weibo12.png)
 
 2. 驻波比仿真曲线图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo13.png)
+![](img/weibo13.png)
 
 3. 二维、三维方向图
  * XZ面增益图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo14.png)
+![](img/weibo14.png)
 
  * XY面增益方向图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo15.png)
+![](img/weibo15.png)
 
 4. 三维增益方向图
 
-![](https://ythdong.gitee.io/blog_image/%E4%B8%93%E4%B8%9A%E8%AF%BE/weibo16.png)
+![](img/weibo16.png)
